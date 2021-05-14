@@ -1,0 +1,52 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import variables
+ */
+@tailwind base;
+
+@layer base {
+    h1 {
+      @apply text-base;
+    }
+
+    p{
+        @apply text-justify;
+    }
+
+    span {
+        @apply font-panteres;
+    }
+    
+  }
+
+@tailwind components;
+
+@import "variables";
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "layouts/home";
+
+@tailwind utilities;
+
+/**
+ * Do NOT include anything else in this file!
+ */

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <title>UOC Boilerplate</title>
+  </head>
+  <body class="w-100 h-screen m-0 bg-fons text-black font-sans">
+    <header>
+      <nav class="flex items-center justify-between flex-wrap bg-nav p-6 md:pl-xl2">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <a class="navbar-brand" href="#"><img src="assets/images/logoLPmenu.png" alt="Logo de Les Panteres" width="90" height="85"></a>
+        </div>
+        <div class="block md:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow md:flex md:items-center md:w-auto">
+          <div class="text-sm md:flex-grow">
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              Inici
+              </a>
+              <a href="laBanda.html" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              La Banda
+              </a>
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              Notícies
+              </a>
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              Contacte  
+              </a>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <!-- <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/images/logoLPmenu.png" alt="Logo de Les Panteres" width="90" height="85"></a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" type="button" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Inici</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="laBanda.html">La banda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="noticies.html">Notícies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacte.html">Contacte</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> -->
+    <main>
+      <div class="my-md md:p-lg grid grid-cols-portada grid-rows-portada">
+        <h1 class="font-panteres mb-md text-lg md:text-xl3 text-center col-start-1 col-end-4 row-start-1 row-end-2">Les Panteres</h1>
+        <img class="w-full h-auto md:h-full object-cover col-start-1 col-end-4 row-start-2 row-end-3" srcset="assets/images/escenariM.jpg 350w, assets/images/escenariT.jpg 600w, assets/images/escenariD.jpg 850w" sizes="(min-width: 1100px) 850px, (min-width: 550px) 600px, 350px" src="assets/images/escenariM.jpg" alt="Imatge escenari concert de Les Panteres">
+        <a class="p-md text-md font-semibold text-white no-underline col-start-1 col-end-3 row-start-2 row-end-3 self-end" href="#"><i class="fas fa-play-circle"></i> Play</a>
+        <a class="btn-dark mt-sm mr-md float-right text-white no-underline col-start-2 col-end-3 row-start-3 row-end-4" href="#" role="button">Notícies</a>
+        <p class="p-lg mt-sm col-start-1 col-end-4 row-start-4 row-end-5"><span>Les Panteres</span> és un grup de rock creat el 2011 i compost per 6 membres. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, nemo repellat impedit aspernatur quam vel officiis laudantium
+        tenetur quia sunt soluta explicabo nihil? Libero explicabo quas nostrum reprehenderit esse sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas sed consectetur illo optio mollitia odio ipsam totam, voluptates exercitationem, soluta veniam minima eos vero nostrum nulla pariatur dolorum itaque?
+        Laborum ipsa est, modi quisquam numquam molestiae blanditiis odio exercitationem inventore fuga explicabo quo at iste, distinctio quod eaque repudiandae temporibus ratione, sint molestias nostrum illum eius a! Vel, perspiciatis!
+        Quaerat nobis velit beatae soluta corporis accusamus a quasi esse, sapiente odio possimus sit similique, voluptatum ipsa delectus placeat voluptatem in ullam? Quidem non voluptate tempora? Fugiat, voluptatibus? Ad, molestias.
+        </p>
+        <hr class="hidden">
+        <a class="btn-dark mt-sm mx-md mb-0 text-white no-underline col-start-2 col-end-3 row-start-5 row-end-6" href="laBanda.html" role="button">Coneix la banda</a>
+      </div>
+    </main>
+    <!-- <footer>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logoLPmenu.png" alt="Logo de Les Panteres" width="55" height="50">
+          </a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown2" type="button" aria-controls="navbarNavDropdown2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown2">
+            <ul class="navbar-nav w-100 justify-content-center">            
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Inici</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="laBanda.html">La banda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="noticies.html">Notícies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacte.html">Contacte</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end">  
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </footer> -->
+    <footer>
+      <nav class="flex items-center justify-between flex-wrap bg-nav p-6 md:pl-xl2">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <a class="navbar-brand" href="#"><img src="assets/images/logoLPmenu.png" alt="Logo de Les Panteres" width="90" height="85"></a>
+        </div>
+        <div class="block md:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow md:flex md:items-center md:w-auto">
+          <div class="text-sm md:flex-grow">
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              Inici
+              </a>
+              <a href="laBanda.html" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              La Banda
+              </a>
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              Notícies
+              </a>
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              Contacte  
+              </a>
+        </div>
+        
+        </div>
+        <div class="w-full block flex-grow md:flex md:items-end md:w-auto">
+          <div class="text-sm md:flex-grow">
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+                <i class="fab fa-twitter"></i>  
+              </a>
+        </div>
+        
+        </div>
+        
+      </nav>
+    </footer>
+    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
