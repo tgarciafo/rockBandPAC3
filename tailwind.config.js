@@ -23,11 +23,13 @@ module.exports = {
       },
       fontSize: {
         'base': ['20px'],
+        '35': ['35px'],
         'md': ['1.5em'],
         'lg': ['50px'],
         'xl': ['55px'],
         'xl2': ['55px'],
-        'xl3': ['96px']
+        'xl3': ['96px'],
+        'card-title' : ['1.25rem']
       },
       margin: {
         'sm':'10px',
@@ -51,16 +53,42 @@ module.exports = {
         'portada': 'auto auto 50px auto 50px',
         'portada-Desktop': 'auto auto 2fr .5fr'
       },
+      lineHeight: {
+        'cards': '1.2'
+       },
       textColor: theme => theme('colors'),
      textColor: {
-       'play': '#fc1b35'
+       'play': '#fc1b35',
+       'muted': '#6c757d'
      }
     }
   },
   variants: {
     extend: {},
   },
+  corePlugins: {
+    container: false
+  },
   plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          
+          '@screen sm': {
+            maxWidth: '540px',
+          },
+          '@screen md': {
+            maxWidth: '720px',
+          },
+          '@screen lg': {
+            maxWidth: '960px',
+          },
+          '@screen xl': {
+            maxWidth: '1140px',
+          }
+        }
+      })
+    },
     require('tailwindcss-base-buttons')({
       baseClass: '.button',
       colors: {
