@@ -70,11 +70,11 @@ module.exports = {
                   text: '#fff', 
                   borderWidth: '1px',
                   activeBackground: '#000',
-                  activeBorderWidth: '1px',
-                  activeBorderColor: '#fff',
+                  /* activeBorderWidth: '1px',
+                  activeBorderColor: '#fff', */
                   hoverBackground: '#d3cccc',
-                  hoverBorderColor: '#000',
-                  hoverBorderWidth: '1px',
+                  /* hoverBorderColor: '#000',
+                  hoverBorderWidth: '1px', */
                   hoverText: '#fc1b35'
               }
           }
