@@ -32,7 +32,9 @@
     "rimraf": "^3.0.2",
     "sass": "^1.32.5",
     "sharp": "^0.27.1",
-    "tailwindcss": "^2.1.2"
+    "tailwindcss": "^2.1.2",
+    "tailwindcss-base-buttons": "^1.0.1",
+    "tailwindcss-text-fill-stroke": "^1.1.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3"
