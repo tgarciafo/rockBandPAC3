@@ -5,23 +5,24 @@ module.exports = {
     extend: {
       backgroundColor: theme => ({
       ...theme('colors'),
-      'fons': '#fd9853',
-      'nav': '#daf7a6'
+      'orange': '#fd9853',
+      'llima': '#daf7a6'
       }),
       borderColor: theme => ({
         ...theme('colors'),
-        'light': '#daf7a6'
+        'llima': '#daf7a6'
       }),
       width: {
         '35':'35%'
       },
       borderWidth: {
-        '5':'2.5px'
+        'base':'2.5px'
       },
       fontFamily: {
         panteres:['"New Rocker"', 'cursive']
       },
       fontSize: {
+        'sm': ['1.25em'],
         'base': ['20px'],
         '35': ['35px'],
         'md': ['1.5em'],
@@ -32,10 +33,14 @@ module.exports = {
         'card-title' : ['1.25rem']
       },
       margin: {
-        'sm':'10px',
-        'md': '20px',
+        
+        'nav': '8px',
+        'sm':'10px',        
+        'md': '20px'
       },
       padding: {
+        'xs': '8px',
+        's': '25px',
         'sm':'10px',
         'md':'15px',
         'lg': '20px',
@@ -54,12 +59,14 @@ module.exports = {
         'portada-Desktop': 'auto auto 2fr .5fr'
       },
       lineHeight: {
-        'cards': '1.2'
+        'tight': '1.2'
        },
       textColor: theme => theme('colors'),
      textColor: {
-       'play': '#fc1b35',
-       'muted': '#6c757d'
+       'red': '#fc1b35',
+       'light-gray': '#6c757d',
+       'gray': '#737373',
+       'black': '#191919',
      }
     }
   },

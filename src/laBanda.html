@@ -6,31 +6,31 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
-    <title>UOC Boilerplate</title>
+    <title>Les Panteres</title>
   </head>
   <body class="w-100 h-screen m-0 bg-fons text-black font-sans">
     <header>
-      <nav class="flex items-center justify-between flex-wrap bg-nav p-6 md:pl-xl2">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <a class="navbar-brand" href="index.html"><img src="assets/images/logoLPmenu.png" alt="Logo de Les Panteres" width="90" height="85"></a>
+      <nav class="flex items-center justify-between flex-wrap bg-llima p-3 md:pl-xl2 md:py-xs md:pr-0">
+        <div class="flex items-center flex-shrink-0 mr-6">
+          <a class="mr-4" href="index.html"><img src="assets/images/logoLPmenu.png" alt="Logo de Les Panteres" width="90" height="85"></a>
         </div>
         <div class="block md:hidden">
-          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          <button class="flex items-center px-3 py-2 border rounded text-gray leading-none border-gray-300">
+            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
           </button>
         </div>
         <div class="w-full block flex-grow md:flex md:items-center md:w-auto">
           <div class="text-sm md:flex-grow">
-              <a href="index.html" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              <a href="index.html" class="hidden mt-4 md:inline-block md:mt-0 px-s text-gray hover:text-black mr-4">
               Inici
               </a>
-              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 px-s text-black mr-4">
               La Banda
               </a>
-              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-gray px-s hover:text-black mr-4">
               Notícies
               </a>
-              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+              <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-gray px-s hover:text-black mr-4">
               Contacte  
               </a>
         </div>
@@ -40,67 +40,56 @@
     <main>
       <h1 class="m-md text-35 text-center font-semibold md:text-xl2">Membres de <span class="font-normal">Les Panteres</span></h1>
     <div class=" flex container mx-auto flex-wrap justify-around">  
-      <!--Card 1-->
-      <div class="w-80 m-md relative rounded flex flex-col break-words border bg-white">
-        <img class="w-full" src="assets/images/chloe.jpg" alt="Imatge component del grup Chloe">
-        <div class="px-6 py-4">
-          <h5 class="font-medium mb-2 leading-cards md:text-card-title">Chloe</h5>
-          <h6 class="mb-2 font-medium text-muted -mt-1 leading-cards">Veu i guitarra</h6>
+      <div class="container-card">
+        <img class="card-image" src="assets/images/chloe.jpg" alt="Imatge component del grup Chloe">
+        <div class="card-body">
+          <h5 class="card-title md:text-card-title">Chloe</h5>
+          <h6 class="card-subtitle">Veu i guitarra</h6>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium suscipit, illo mollitia ab ipsa autem nulla dolorum corrupti blanditiis dolores, expedita labore. Placeat illum voluptates eius esse! Deleniti, ipsum possimus.          </p>
         </div>
       </div>
-    
-    <!--Card 2-->
-    <div class="w-80 m-md relative rounded flex flex-col break-words border bg-white">
-      <img class="w-full" src="assets/images/joel.jpg" alt="Imatge component del grup Joel">
-      <div class="px-6 py-4">
-        <h5 class="font-medium mb-2 leading-cards md:text-card-title">Joel</h5>
-        <h6 class="mb-2 font-medium text-muted -mt-1 leading-cards">Guitarra</h6>
+    <div class="container-card">
+      <img class="card-image" src="assets/images/joel.jpg" alt="Imatge component del grup Joel">
+      <div class="card-body">
+        <h5 class="card-title md:text-card-title">Joel</h5>
+        <h6 class="card-subtitle">Guitarra</h6>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium suscipit, illo mollitia ab ipsa autem nulla dolorum corrupti blanditiis dolores, expedita labore. Placeat illum voluptates eius esse! Deleniti, ipsum possimus.          </p>
       </div>
     </div>
-  
-  <!--Card 3-->
-  <div class="w-80 m-md relative rounded flex flex-col break-words border bg-white">
-    <img class="w-full" src="assets/images/bruna.jpg" alt="Imatge component del grup Bruna">
-    <div class="px-6 py-4">
-      <h5 class="font-medium mb-2 leading-cards md:text-card-title">Bruna</h5>
-      <h6 class="mb-2 font-medium text-muted -mt-1 leading-cards">Baix</h6>
+  <div class="container-card">
+    <img class="card-image" src="assets/images/bruna.jpg" alt="Imatge component del grup Bruna">
+    <div class="card-body">
+      <h5 class="card-title md:text-card-title">Bruna</h5>
+      <h6 class="card-subtitle">Baix</h6>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium suscipit, illo mollitia ab ipsa autem nulla dolorum corrupti blanditiis dolores, expedita labore. Placeat illum voluptates eius esse! Deleniti, ipsum possimus.          </p>
     </div>
   </div>
-
-<!--Card 4-->
-<div class="w-80 m-md relative rounded flex flex-col break-words border bg-white">
-  <img class="w-full" src="assets/images/quim.jpg" alt="Imatge component del grup Quim">
-  <div class="px-6 py-4">
-    <h5 class="font-medium mb-2 leading-cards md:text-card-title">Quim</h5>
-    <h6 class="mb-2 font-medium text-muted -mt-1 leading-cards">Teclat i guitarra</h6>
+<div class="container-card">
+  <img class="card-image" src="assets/images/quim.jpg" alt="Imatge component del grup Quim">
+  <div class="card-body">
+    <h5 class="card-title md:text-card-title">Quim</h5>
+    <h6 class="card-subtitle">Teclat i guitarra</h6>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium suscipit, illo mollitia ab ipsa autem nulla dolorum corrupti blanditiis dolores, expedita labore. Placeat illum voluptates eius esse! Deleniti, ipsum possimus.          </p>
   </div>
 </div>
-
-<!--Card 5-->
-<div class="w-80 m-md relative rounded flex flex-col break-words border bg-white">
-  <img class="w-full" src="assets/images/bruc.jpg" alt="Imatge component del grup Bruc">
-  <div class="px-6 py-4">
-    <h5 class="font-medium mb-2 leading-cards md:text-card-title">Bruc</h5>
-    <h6 class="mb-2 font-medium text-muted -mt-1 leading-cards">Bateria</h6>
+<div class="container-card">
+  <img class="card-image" src="assets/images/bruc.jpg" alt="Imatge component del grup Bruc">
+  <div class="card-body">
+    <h5 class="card-title md:text-card-title">Bruc</h5>
+    <h6 class="card-subtitle">Bateria</h6>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium suscipit, illo mollitia ab ipsa autem nulla dolorum corrupti blanditiis dolores, expedita labore. Placeat illum voluptates eius esse! Deleniti, ipsum possimus.          </p>
   </div>
 </div>
-
-<!--Card 6-->
-<div class="w-80 m-md relative rounded flex flex-col break-words border bg-white">
-  <img class="w-full" src="assets/images/mariona.jpg" alt="Imatge component del grup Mariona">
-  <div class="px-6 py-4">
-    <h5 class="font-medium mb-2 leading-cards md:text-card-title">Mariona</h5>
-    <h6 class="mb-2 font-medium text-muted -mt-1 leading-cards">Violí</h6>
+<div class="container-card">
+  <img class="card-image" src="assets/images/mariona.jpg" alt="Imatge component del grup Mariona">
+  <div class="card-body">
+    <h5 class="card-title md:text-card-title">Mariona</h5>
+    <h6 class="card-subtitle">Violí</h6>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium suscipit, illo mollitia ab ipsa autem nulla dolorum corrupti blanditiis dolores, expedita labore. Placeat illum voluptates eius esse! Deleniti, ipsum possimus.          </p>
   </div>
@@ -108,49 +97,47 @@
 </div>
       
   </main>
-  <footer>
-    <nav class="flex items-center justify-between flex-wrap bg-nav p-6 md:pl-xl2">
-      <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <a class="navbar-brand" href="index.html"><img src="assets/images/logoLPmenu.png" alt="Logo de Les Panteres" width="90" height="85"></a>
+  <footer>    
+    <nav class="flex items-center justify-between flex-wrap bg-llima p-3 md:pl-xl2 md:py-xs md:pr-0">
+      <div class="flex items-center flex-shrink-0 mr-6">
+        <a class="mr-4" href="index.html"><img src="assets/images/logoLPmenu.png" alt="Logo de Les Panteres" width="55" height="50"></a>
       </div>
       <div class="block md:hidden">
-        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        <button class="flex items-center px-3 py-2 border rounded text-gray leading-none border-gray-300">
+          <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button>
       </div>
-      <div class="w-full block flex-grow md:flex md:items-center md:w-auto">
-        <div class="text-sm md:flex-grow">
-            <a href="index.html" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+      <div class="w-full block flex-grow md:flex md:justify-end md:w-auto">
+        <div class="text-sm">
+            <a href="index.html" class="hidden mt-4 md:inline-block md:mt-0 px-s text-gray hover:text-black mr-4">
             Inici
             </a>
-            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 px-s text-black mr-4">
             La Banda
             </a>
-            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-gray px-s hover:text-black mr-4">
             Notícies
             </a>
-            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-gray px-s hover:text-black mr-4">
             Contacte  
             </a>
-      </div>      
       </div>
-      <div class="w-full block flex-grow md:flex md:items-end md:w-auto">
-        <div class="text-sm md:flex-grow">
-            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+      </div>
+      <div class="w-full block flex-grow md:flex md:justify-end md:w-auto">
+        <div class="text-sm ">
+            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-gray hover:text-black px-s">
               <i class="fab fa-google-plus-g"></i>
             </a>
-            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-gray hover:text-black px-s">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4">
+            <a href="#" class="hidden mt-4 md:inline-block md:mt-0 text-gray hover:text-black px-s">
               <i class="fab fa-twitter"></i>  
             </a>
       </div>
-      
       </div>
-      
-    </nav>
-  </footer>
+    </nav>      
+</footer>
   <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 </html>

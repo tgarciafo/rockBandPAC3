@@ -1,9 +1,5 @@
 @tailwind base;
 
-@tailwind components;
-
-@tailwind utilities;
-
 @layer base {
     
     p{
@@ -13,6 +9,42 @@
     span {
         @apply font-panteres;
     }
+
+    body {
+        @apply  h-screen m-0 bg-orange text-black font-sans;
+    }
     
   }
 
+@tailwind components;
+
+@layer components {
+
+    .container-card{
+        @apply w-80 m-md relative rounded flex flex-col break-words border bg-white;
+    }
+    
+    .card-image{
+        @apply w-full;
+    }
+
+    .card-body{
+        @apply px-6 py-4;
+    }
+
+    .card-title{
+        @apply font-medium mb-2 leading-tight;
+    }
+
+    .card-subtitle{
+        @apply mb-2 font-medium text-light-gray -mt-1 leading-tight;
+    }
+
+}
+
+
+@tailwind utilities;
+
+
+
+  
