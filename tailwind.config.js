@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: theme => ({
-      ...theme('colors'),
-      'orange': '#fd9853',
-      'llima': '#daf7a6'
+        ...theme('colors'),
+        'orange': '#fd9853',
+        'llima': '#daf7a6'
       }),
       borderColor: theme => ({
         ...theme('colors'),
@@ -33,8 +33,6 @@ module.exports = {
         'card-title' : ['1.25rem']
       },
       margin: {
-        
-        'nav': '8px',
         'sm':'10px',        
         'md': '20px'
       },
@@ -62,12 +60,12 @@ module.exports = {
         'tight': '1.2'
        },
       textColor: theme => theme('colors'),
-     textColor: {
-       'red': '#fc1b35',
-       'light-gray': '#6c757d',
-       'gray': '#737373',
-       'black': '#191919',
-     }
+        textColor: {
+        'red': '#fc1b35',
+        'light-gray': '#6c757d',
+        'gray': '#737373',
+        'black': '#191919',
+      }
     }
   },
   variants: {
@@ -80,7 +78,6 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         '.container': {
-          
           '@screen sm': {
             maxWidth: '540px',
           },
@@ -99,22 +96,22 @@ module.exports = {
     require('tailwindcss-base-buttons')({
       baseClass: '.button',
       colors: {
-          theme: {
-              primary: {
-                  background: '#000',
-                  text: '#fff', 
-                  borderWidth: '1px',
-                  activeBackground: '#000',
-                  /* activeBorderWidth: '1px',
-                  activeBorderColor: '#fff', */
-                  hoverBackground: '#d3cccc',
-                  /* hoverBorderColor: '#000',
-                  hoverBorderWidth: '1px', */
-                  hoverText: '#fc1b35'
-              }
+        theme: {
+          primary: {
+            background: '#000',
+            text: '#fff', 
+            borderWidth: '1px',
+            activeBackground: '#000',
+         /* activeBorderWidth: '1px',
+            activeBorderColor: '#fff', */
+            hoverBackground: '#d3cccc',
+         /* hoverBorderColor: '#000',
+            hoverBorderWidth: '1px', */
+            hoverText: '#fc1b35'
           }
+        }
       }
-  }),
-  require('tailwindcss-text-fill-stroke')()
+    }),
+    require('tailwindcss-text-fill-stroke')()
   ],
 }
