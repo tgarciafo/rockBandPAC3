@@ -19,7 +19,7 @@ module.exports = {
         'base':'2.5px'
       },
       fontFamily: {
-        panteres:['"New Rocker"', 'cursive']
+        'newRocker':['"New Rocker"', 'cursive']
       },
       fontSize: {
         'sm': ['1.25em'],
