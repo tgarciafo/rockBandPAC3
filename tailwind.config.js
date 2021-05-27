@@ -29,8 +29,7 @@ module.exports = {
         'lg': ['50px'],
         'xl': ['55px'],
         'xl2': ['55px'],
-        'xl3': ['96px'],
-        'card-title' : ['1.25rem']
+        'xl3': ['96px']
       },
       margin: {
         'sm':'10px',        
